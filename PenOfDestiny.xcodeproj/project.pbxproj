@@ -13,11 +13,12 @@
 		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
 		53DF997D23CDD40000B8FD81 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF997C23CDD40000B8FD81 /* UserDefaults.swift */; };
+		B31B689127C76004000F3AA9 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = B31B689027C76004000F3AA9 /* Yams */; };
+		B31B689327C76078000F3AA9 /* RemoteImageView in Frameworks */ = {isa = PBXBuildFile; productRef = B31B689227C76078000F3AA9 /* RemoteImageView */; };
 		E234D236239E848B00FAC1EB /* SpinningPenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E234D235239E848B00FAC1EB /* SpinningPenView.swift */; };
 		E234D238239E84AE00FAC1EB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E234D237239E84AE00FAC1EB /* SettingsView.swift */; };
 		E2E15A7123A197ED0066D453 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E15A7023A197EC0066D453 /* SettingsStore.swift */; };
 		E2E15A7D23A305860066D453 /* pens.yml in Resources */ = {isa = PBXBuildFile; fileRef = E2E15A7C23A305850066D453 /* pens.yml */; };
-		E2E15A8023A306480066D453 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = E2E15A7F23A306480066D453 /* Yams */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53DF997C23CDD40000B8FD81 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		B31B688F27C75FED000F3AA9 /* Yams */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Yams; path = ../../Yams; sourceTree = "<group>"; };
 		E234D235239E848B00FAC1EB /* SpinningPenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningPenView.swift; sourceTree = "<group>"; };
 		E234D237239E84AE00FAC1EB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E2E15A7023A197EC0066D453 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
@@ -41,7 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E15A8023A306480066D453 /* Yams in Frameworks */,
+				B31B689127C76004000F3AA9 /* Yams in Frameworks */,
+				B31B689327C76078000F3AA9 /* RemoteImageView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E2E15A8823A3A7D40066D453 /* RemoteImageView */,
+				B31B688F27C75FED000F3AA9 /* Yams */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -132,7 +136,8 @@
 			);
 			name = PenOfDestiny;
 			packageProductDependencies = (
-				E2E15A7F23A306480066D453 /* Yams */,
+				B31B689027C76004000F3AA9 /* Yams */,
+				B31B689227C76078000F3AA9 /* RemoteImageView */,
 			);
 			productName = MyRWTutorial;
 			productReference = 18D775BD22AD944300AE281E /* PenOfDestiny.app */;
@@ -163,7 +168,6 @@
 			);
 			mainGroup = 18D775B422AD944300AE281E;
 			packageReferences = (
-				E2E15A7E23A306480066D453 /* XCRemoteSwiftPackageReference "Yams" */,
 			);
 			productRefGroup = 18D775BE22AD944300AE281E /* Products */;
 			projectDirPath = "";
@@ -393,22 +397,14 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		E2E15A7E23A306480066D453 /* XCRemoteSwiftPackageReference "Yams" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jpsim/Yams";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		E2E15A7F23A306480066D453 /* Yams */ = {
+		B31B689027C76004000F3AA9 /* Yams */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E2E15A7E23A306480066D453 /* XCRemoteSwiftPackageReference "Yams" */;
 			productName = Yams;
+		};
+		B31B689227C76078000F3AA9 /* RemoteImageView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RemoteImageView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
